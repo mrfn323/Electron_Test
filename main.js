@@ -1,5 +1,6 @@
 const {BrowserWindow, app} = require('electron');
 
+try{
 function createWindow(){
 
     let win = new BrowserWindow({
@@ -28,6 +29,7 @@ app.on('window-all-closed', ()=>{
         app.quit();
     }
 });
+
 app.on('activate', ()=>{
 
     if(win == null){
@@ -35,3 +37,10 @@ app.on('activate', ()=>{
     }
 
 })
+}catch(e){
+
+    console.log("Uh oh, big sucky sucky bad. Error catch haha funny");
+    app.exit();
+
+}
+

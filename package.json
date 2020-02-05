@@ -2,16 +2,15 @@
   "name": "electron_test",
   "version": "1.0.0",
   "description": "Me playing around with electron",
-  "main": "app.js",
-  "dependencies": {
-    "electron": "^7.1.4"
-  },
+  "main": "main.js",
+  "dependencies": {},
   "devDependencies": {
+    "electron": "^7.1.4",
     "electron-packager": "^14.2.0"
   },
   "scripts": {
     "start": "electron main.js"
   },
-  "author": "",
+  "author": "BAHAD IS ME AUTHOR",
   "license": "ISC"
 }
